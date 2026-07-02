@@ -16,39 +16,39 @@ The main goal of this project is to understand how website deployment works in a
 * Beginner-friendly DevOps project<br>
 
 ## Architect Diagram
-![alt text](image.png)
+![alt text](<imgs/architect_diagram_for_hudson.jpeg>)
 
 
 ## Steps I Followed
 ### 1. Launch Amazon Linux Instance
 * Created an EC2 instance<br>
-![alt text](<imgs/create a instance.png>)  
+![alt text](<imgs/create_a_instance.png>)  
 * Connected using SSH
-![alt text](<imgs/connect instance use ssh.png>)
+![alt text](<imgs/connect_instance_use_ssh.png>)
 ### 2.Install NGINX
 sudo yum update -y<br>
 sudo yum install nginx -y
-![alt text](<imgs/install nginx.png>)
+![alt text](<imgs/install_nginx.png>)
 ### 3.Start NGINX Server
 sudo systemctl start nginx<br>
 sudo systemctl enable nginx
-![alt text](<imgs/start nginx server.png>)
+![alt text](<imgs/start_nginx_server.png>)
 ### 4.Deploy Website Files
 * copied project files
-![alt text](<imgs/copied project files.png>)
+![alt text](<imgs/copied_project_files.png>)
 cd /usr/share/nginx/html
 
 * Moved my website files to nginx directory.
-![alt text](<imgs/moved website in nginx.png>)
+![alt text](<imgs/moved_website_in_nginx.png>)
 ### 5.Restart Server
 sudo systemctl restart nginx
-![alt text](<imgs/restart nginx.png>)
+![alt text](<imgs/restart_nginx.png>)
 ### 6. Access Website
 
 * Open browser
 * Enter Public IP of instance
 * Website "Hudson" is live 🎉
-![alt text](<imgs/acess website2.png>)
+![alt text](<imgs/acess_website2.png>)
 
 ## What i Learned
 * Basics of cloud computing
